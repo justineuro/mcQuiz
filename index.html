@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>mcQuiz Template</title>
+
+	<!-- if online
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+	<!-- if offline -->
+	<link rel="stylesheet" href="bootstrap/3.3.7/css/bootstrap-cerulean-grn99.min.css">
+	<link rel="stylesheet" href="font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/mc-tz.css">
+
+	<script src="jquery/3.3.1/jquery.min.js"></script> 
+	<script src="bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	
+	<div id="navBar">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html"><img alt="mcQuiz Logo" style="margin-top: -10px" src="res/mcQuiz-lib.gif" height="40" width="40"></img></a>
+					<a class="navbar-brand" href="index.html"><font color="yellow">mcQuiz</font></a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html"><span class="fa fa-home"></span>Home</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="fa fa-github"></span> GitHub<span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="https://github.com/justineuro/mcQuiz"><span class="fa fa-github-square"></span> GitHub Site</a></li>
+								<li><a href="https://github.com/justineuro/mcQuiz/archive/master.zip"><span class="fa fa-download"></span> .zip</a></li>
+								<li><a href="https://github.com/justineuro/mcQuiz/archive/master.tar.gz"><span class="fa fa-download"></span> .tar.gz</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div id="main">
+	<p><h4><b></b>Please choose a version for demo.</b></h4></p>
+	<ul>
+		<li> Offline versions:
+			<ol>
+				<li><a href="index-tz-noaes.html">uses TeXZilla for math rendering, <u>no</u> AES encryption</a></li>
+				<li><a href="index-tz-aes.html">uses TeXZilla for math rendering, <u>with</u> AES encryption</a></li>
+				<li><a href="index-jax-noaes.html">uses MathJax for math rendering, <u>no</u> AES encryption</a></li>
+				<li><a href="index-jax-aes.html">uses MathJax for math rendering, <u>with</u> AES encryption [under construction]</a></li>
+			</ol>
+		<li> Online versions:
+			<ol>
+				<li><a href="index-jax-noaes-online.html">uses MathJax for math rendering, <u>no</u> AES encryption</a></li>
+				<li><a href="index-jax-aes-online.html">uses MathJax for math rendering, <u>with</u> AES encryption [under construction]</a></li>
+			</ol>
+	</div>
+	
+</body>
+</html>

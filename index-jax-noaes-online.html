@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>mcQuiz-noaes Template</title>
+
+	<!-- if online -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+
+	<link rel="stylesheet" href="bootstrap/3.3.7/css/bootstrap-cerulean-grn99.min.css">
+	<link rel="stylesheet" href="css/mc-tz.css">
+
+	<script src="js/smoothScroll.js"></script>
+
+</head>
+
+<body>
+
+	<script type='text/x-mathjax-config''>
+		MathJax.Hub.Config({
+			extensions: ['tex2jax.js'],
+			jax: ['input/TeX', 'output/HTML-CSS'],
+			tex2jax: {
+				inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+				displayMath: [ ['$$','$$'], ['\\[','\\]'] ],
+				processEscapes: true
+			},
+			'HTML-CSS': { availableFonts: ['TeX'] }
+		});
+	</script>
+	<script type='text/javascript' async
+		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+
+	<div id="navBar"></div>
+
+	<div id="main">
+	<center>
+
+		<div class="table-responsive" id="tableDiv1">
+			<table class="table table-bordered table-hover" id='table1'></table>
+		</div>
+
+		<div id="notifyTopic"></div>
+
+		<div id="chooseTotalQ"></div>
+
+		<!--  Q&A items generated here -->
+
+		<!-- restart button generated here -->
+
+	</center>
+	</div>
+
+	<script src='js/setDat-mc-jax-noaes.js'></script>
+	<script src='js/topicMenuButtons.js'></script>
+	<script src='js/paramsQ-bs.js'></script>
+	<script src='js/layoutQA.js'></script>
+	<script src='js/coinBump.js'></script>
+	<script src='js/genQA-bs-aes.js'></script>
+
+</body>
+</html>
