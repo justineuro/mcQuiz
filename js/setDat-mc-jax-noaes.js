@@ -96,7 +96,7 @@ arithmetic = [
 ];
 arithmetc = arithmetic.sort(function(a, b){return 0.5 - Math.random()});
 
-var algebra = [ 
+algebra = [ 
 [ "$x^2 -5x + 6 =$ ",
 	{
 		2:"$(x-4)(x-2)$",

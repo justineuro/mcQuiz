@@ -13,11 +13,11 @@ for (var ind = 0; ind < datList.length; ind++) {
 /* create dataset array for each dataset (see datList above);
  * randomize using sort() and compare function */
 formulas = [
-	[ "\\text{The area of a circle with a radius of }\\; r \\; \\text{is} ",
+	[ "\\text{The area of a circle with a radius of } r \\text{ is} ",
 {1:"\\pi r^2", 2:"2\\pi r", 3:"\\sqrt{\\pi r}", 4:"\\sqrt{\\pi}r"},
 ""
 	],
-	[ "\\text{The equation of a } \\; \\mathbf{unit\\; circle} \\; \\text{is}",
+	[ "\\text{An equation of a } \\mathbf{unit\\; circle} \\text{ is}",
 	{
 		4:" xy = 1 ",
 		3:" y = x^2 ",
@@ -92,7 +92,7 @@ arithmetic = [
 ];
 arithmetc = arithmetic.sort(function(a, b){return 0.5 - Math.random()});
 
-var algebra = [ 
+algebra = [ 
 [ "x^2 -5x + 6 = ",
 	{
 		2:"(x-4)(x-2)",
@@ -117,7 +117,7 @@ var algebra = [
 		4:" x^2 +xy - y^2 "
 	}, ""
 	],
-	[ "\\log_{10} 100 =  ",
+	[ " \\log_{10} 100 =  ",
 	{
 		3:"1",
 		4:"4",
