@@ -76,7 +76,6 @@ function genQ(ind,data) {
 	if (ind < dat.length) { // if not last item remove div endInfo; added to allow review 
 		document.getElementById("endInfo").remove();
 	}
-	console.log(aes);
 	if (aes) {
 		var question = CryptoJS.AES.decrypt(dat[ind][0], "Secret Passphrase").toString(CryptoJS.enc.Utf8);
 		var choicesO = CryptoJS.AES.decrypt(dat[ind][1], "Secret Passphrase").toString(CryptoJS.enc.Utf8);
