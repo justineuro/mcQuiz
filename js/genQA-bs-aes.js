@@ -5,7 +5,7 @@
 // function for notifying Choice clicked
 choiceInd = ['choice1','choice2','choice3','choice4']; // array of choice input ids
 function echoChoice(id) {
-	document.getElementById("echoChoice").innerHTML = "<font coloe='blue'>Your answer is Choice " + (choiceInd.indexOf(id) + 1 )  + '.</font>';
+	document.getElementById("echoChoice").innerHTML = "<font color='blue'>Your answer is Choice " + (choiceInd.indexOf(id) + 1 )  + '.</font>';
 } 
 
 // function for verifying answer
