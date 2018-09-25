@@ -8,6 +8,7 @@
 }
 .table #table2 {
 	border: 0px;
+	width: 226px;
 }
 button {
 	align: center;
@@ -16,14 +17,20 @@ button {
 	color: #007700;
 	padding: 2px 2px 2px 2px;
 	border-color: #005500;
-	border-top-left-radius: 2px;
-	border-top-right-radius: 2px;
-	border-bottom-left-radius: 2px;
-	border-bottom-right-radius: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 .btn {
 	font-size: 12px;
 	padding: 8px 8px 8px 8px;
+}
+#numq,#next,#alabel,#nextBtn {
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
 }
 #show {
 	display: inline;
