@@ -13,3 +13,6 @@ The output file is `q-tz-aes.txt`.
 ```
 
 The input file needs a -aes.txt suffix+extension.
+
+### MathJax example
+The files 'q-jax.txt`, `q-jax-aes.txt`, and `q-jax.dec.txt` are used or obtained when the redering of the mathematics is done using MathJax.
