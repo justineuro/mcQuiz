@@ -1,0 +1,35 @@
+#!/bin/bash
+###
+# Filename: txt2aes
+# Description: Bash script for AES-encrypting;
+# input is a file.txt file with expressions to be encrypted, one per line;
+# output is file-aes.txt containing corresponding encrypted text
+# Usage: txt2aes <filename.txt>
+#
+# Author: J.L.A. Uro (justineuro@gmail.com)
+# Created:	2018.09.04 00:00:00 +8
+# Revised:	2018.09.26 08:57:41 +8
+### 
+#
+#----------------------------------------------------------------------------------
+# create output file for the encrypted text; 
+# if output file already exists, then make a back-up copy
+#----------------------------------------------------------------------------------
+filen=${1/.txt/-aes.txt}
+if [ -f $filen ]; then 
+	mv $filen $filen."bak"
+fi
+
+#----------------------------------------------------------------------------------
+# parse the input file, a line at a time then AES-encrypt; 
+#----------------------------------------------------------------------------------
+while read currLn
+do
+echo -E "$currLn"	# diagnostic; don't interpret escapes (e.g., \t for tab)
+echo -E "$currLn" | openssl enc -e -base64 -A -aes-256-cbc -pass pass:"Secret Passphrase" >> $filen
+echo -ne "\n" >> $filen	# don't create new line, go to next line
+done < $1
+#
+##
+###
+

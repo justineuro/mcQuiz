@@ -26,7 +26,7 @@ formulas = [
 		4:"$xy = 1$",
 		3:"$y = x^2$",
 		2:"$y = x + 1$",
-		1:'$x^2 + y^2 = 1$'
+		1:"$x^2 + y^2 = 1$"
 	}, ""
 	],
 	[ "Euler's formula is ",
@@ -41,7 +41,7 @@ formulas = [
 formulas = formulas.sort(function(a, b){return 0.5 - Math.random()});
 
 trivia = [ 
-	[ "Inventor of the Calculus",
+	[ "Inventors of the Calculus",
 	{
 		1:"Leibniz and Newton",
 		2:"Einstein and Bose",
@@ -131,4 +131,3 @@ algebra = [
 	]
 ];
 algebra = algebra.sort(function(a, b){return 0.5 - Math.random()});
-console.log("setDat.js ", ind);

@@ -1,0 +1,34 @@
+#!/bin/bash
+###
+# Filename: aes2txt
+# Description: Bash script for AES-decrypting;
+# input is a file-aes.txt file with expressions to be encrypted, one per line;
+# output is file-dec.txt containing corresponding encrypted text;
+# Note:  The input filename suffix and extentsion are important: *-aes.txt
+# Usage: txt2aes <filename-aes.txt>
+#
+# Author: J.L.A. Uro (justineuro@gmail.com)
+# Created:	2018.09.04 00:00:00 +8
+# Revised:	2018.09.26 08:57:41 +8
+### 
+#
+#----------------------------------------------------------------------------------
+# create output file for the encrypted text; 
+# if output file already exists, then make a back-up copy
+#----------------------------------------------------------------------------------
+filen=${1/aes.txt/dec.txt}
+if [ -f $filen ]; then 
+	mv $filen $filen."bak"
+fi
+
+#----------------------------------------------------------------------------------
+# parse the input file, a line at a time then AES-decrypt; 
+#----------------------------------------------------------------------------------
+while read currLn
+do
+echo -E "$currLn"
+echo -E $currLn | openssl enc -d -base64 -A -aes-256-cbc -pass pass:'Secret Passphrase' >> $filen
+done < $1
+#
+##
+###

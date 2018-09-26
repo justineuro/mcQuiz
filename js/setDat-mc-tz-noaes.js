@@ -37,7 +37,7 @@ formulas = [
 formulas = formulas.sort(function(a, b){return 0.5 - Math.random()});
 
 trivia = [ 
-	[ "\\text{Inventor of the Calculus}",
+	[ "\\text{Inventors of the Calculus}",
 	{
 		1:"\\text{Leibniz and Newton}",
 		2:"\\text{Einstein and Bose}",
