@@ -2,14 +2,14 @@
 ###
 # Filename: aes2txt
 # Description: Bash script for AES-decrypting;
-# input is a file-aes.txt file with expressions to be encrypted, one per line;
-# output is file-dec.txt containing corresponding encrypted text;
+# input is a file-aes.txt file with expressions to be decrypted, one per line;
+# output is file-dec.txt containing corresponding decrypted text;
 # Note:  The input filename suffix and extentsion are important: *-aes.txt
 # Usage: txt2aes <filename-aes.txt>
 #
 # Author: J.L.A. Uro (justineuro@gmail.com)
 # Created:	2018.09.04 00:00:00 +8
-# Revised:	2018.09.26 08:57:41 +8
+# Revised:	2018.09.26 16:49:41 +8
 ### 
 #
 #----------------------------------------------------------------------------------
