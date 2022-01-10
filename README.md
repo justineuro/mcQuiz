@@ -1,6 +1,6 @@
 ## <img alt="mcQuiz Logo" src="res/mcQuiz-lib.gif" style="margin-bottom: -5px" height="50" width="50" valign="middle"></img>**mcQuiz**
 
-[**mcQuiz**](https://justineuro.github.io/mcQuiz) is a multiple-choice question-and-answer web app.  It comes with a number of versions depending on how mathematical expressions are rendered ([TeXZilla](https://github.com/fred-wang/TeXZilla) or [MathJax](https://mathjax.org)) and whether the question-and-answer data is encrypted (with or without [Advanced Encryption Standard (AES)](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) encryption done using [CryptoJS](https://code.google.com/p/crypto-js)).  
+[**mcQuiz**](https://justineuro.github.io/mcQuiz) is a multiple-choice question-and-answer web app.  It comes with a number of versions depending on how mathematical expressions are rendered ([TeXZilla](https://github.com/fred-wang/TeXZilla) or [MathJax](https://mathjax.org)) and whether the question-and-answer data is encrypted (with or without [Advanced Encryption Standard (AES)](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) encryption done using [CryptoJS](https://code.google.com/p/crypto-js)).  [TeXZilla](https://github.com/fred-wang/TeXZilla) rendering of math expressions works only on Mozilla browsers (e.g., Firefox and Seamonkey).  
 
 A demo can be found at [https://justineuro.github.io/mcQuiz](https://justineuro.github.io/mcQuiz).
 
